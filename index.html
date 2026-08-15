@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Olijarczyk — Mechanical Engineer</title>
+  <meta name="description" content="Portfolio of Andrew Olijarczyk: mechanical engineer (B.S., RPI) with six years of hands-on HVAC field experience. CAD, thermal analysis, controls, and 3D-printed parts.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="index.html">A.OLIJARCZYK<span>_</span></a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a class="active" href="index.html" aria-current="page">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="prints.html">3D Prints</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- Hero: drawing sheet -->
+    <section class="sheet" aria-label="Introduction">
+      <p class="eyebrow"><b>DWG AO-000</b> · PORTFOLIO · REV 1.0</p>
+      <h1 class="hero-name">Andrew Olijarczyk</h1>
+      <p class="hero-role">Mechanical engineer. Six years in the field, now designing the systems I used to install.</p>
+      <p class="hero-copy">
+        B.S. in Mechanical and Aeronautical Engineering from Rensselaer Polytechnic Institute,
+        backed by six years of hands-on HVAC installation, service, and diagnosis.
+        I design in CAD, analyze in Python and MATLAB, and check the answer against how hardware actually behaves.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="projects.html">View projects</a>
+        <a class="btn" href="resume/Andrew-Olijarczyk-Resume.pdf" download>Resume (PDF)</a>
+      </div>
+
+      <div class="titleblock" aria-label="Title block">
+        <div class="tb-row">
+          <div class="tb-cell tb-title">
+            <span class="tb-label">Title</span>
+            <span class="tb-value">PORTFOLIO</span>
+          </div>
+          <div class="tb-cell">
+            <span class="tb-label">Sheet</span>
+            <span class="tb-value">1 OF 5</span>
+          </div>
+        </div>
+        <div class="tb-row">
+          <div class="tb-cell">
+            <span class="tb-label">Rev</span>
+            <span class="tb-value">1.0</span>
+          </div>
+          <div class="tb-cell">
+            <span class="tb-label">Date</span>
+            <span class="tb-value">2026-08</span>
+          </div>
+          <div class="tb-cell">
+            <span class="tb-label">Base</span>
+            <span class="tb-value">NEW CITY, NY</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capabilities -->
+    <section class="section" aria-label="Capabilities">
+      <div class="section-head">
+        <p class="eyebrow">CAPABILITIES</p>
+        <h2>What I bring</h2>
+      </div>
+      <div class="grid cols-3">
+        <div class="card">
+          <p class="eyebrow"><b>01</b> · DESIGN</p>
+          <h3>CAD &amp; part design</h3>
+          <p>Parts, assemblies, and drawings in Siemens NX, Fusion 360, AutoCAD, and Revit — plus Python scripting against the Fusion 360 API for parametric parts.</p>
+        </div>
+        <div class="card">
+          <p class="eyebrow"><b>02</b> · ANALYSIS</p>
+          <h3>Thermal &amp; controls</h3>
+          <p>Heat-transfer models in Python, control design and tuning in MATLAB/Simulink, and aero-structural work in Simcenter and FlightStream.</p>
+        </div>
+        <div class="card">
+          <p class="eyebrow"><b>03</b> · FIELD</p>
+          <h3>Hands-on diagnosis</h3>
+          <p>Six years installing and troubleshooting residential and commercial HVAC. Fluent in blueprints, wiring diagrams, and code-compliant electrical work.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured projects -->
+    <section class="section" aria-label="Featured projects">
+      <div class="section-head">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2>Featured projects</h2>
+      </div>
+      <div class="grid cols-3">
+        <a class="card" href="projects.html">
+          <p class="eyebrow"><b>AO-101</b> · AERO</p>
+          <h3>UAV capstone design</h3>
+          <p>Led design and analysis of a fixed-wing UAV — airframe in Siemens NX, structures in Simcenter, aero in FlightStream.</p>
+          <div class="chips"><span class="chip">Siemens NX</span><span class="chip">Simcenter</span><span class="chip">FlightStream</span></div>
+        </a>
+        <a class="card" href="projects.html">
+          <p class="eyebrow"><b>AO-104</b> · UAV <span class="status">/ IN PROGRESS</span></p>
+          <h3>Sub-250 g FPV quadcopter</h3>
+          <p>Scratch build: H743 flight controller on ArduPilot, ELRS control link, analog video, and a hand-built 2S Li-ion pack.</p>
+          <div class="chips"><span class="chip">ArduPilot</span><span class="chip">ELRS</span><span class="chip">Li-ion</span></div>
+        </a>
+        <a class="card" href="projects.html">
+          <p class="eyebrow"><b>AO-106</b> · ELECTRICAL</p>
+          <h3>Residential 240 V circuit</h3>
+          <p>Dedicated 240 V hot-tub circuit with GFCI protection and code-compliant underground wiring, completed under budget.</p>
+          <div class="chips"><span class="chip">NEC</span><span class="chip">GFCI</span><span class="chip">240 V</span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 3D prints teaser -->
+    <section class="section" aria-label="3D print library">
+      <div class="teaser">
+        <div>
+          <p class="eyebrow">PART LIBRARY</p>
+          <h3>Parts you can spin</h3>
+          <p>Models from my printer, rendered live in the browser. Drag to rotate, download the STL.</p>
+        </div>
+        <a class="btn btn-primary" href="prints.html">Open the 3D print library</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Andrew Olijarczyk — Mechanical Engineer</span>
+      <span>Sheet 1 of 5 · Hand-coded HTML/CSS/JS · 2026</span>
+    </div>
+  </footer>
+
+</body>
+</html>

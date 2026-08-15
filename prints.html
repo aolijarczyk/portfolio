@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Prints — Andrew Olijarczyk</title>
+  <meta name="description" content="3D-printable parts modeled by Andrew Olijarczyk. Rotate each model live in the browser and download the STL files.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Model list (edit js/models-list.js to add parts) -->
+  <script src="js/models-list.js"></script>
+
+  <!-- three.js via CDN, pinned version -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="js/viewer.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="index.html">A.OLIJARCZYK<span>_</span></a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a class="active" href="prints.html" aria-current="page">3D Prints</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="section" aria-label="3D print library">
+      <div class="section-head">
+        <p class="eyebrow">PART LIBRARY</p>
+        <h2>3D prints</h2>
+        <p class="lede">Parts and assemblies from my CAD work. Drag to rotate, scroll to zoom, and download any STL.</p>
+      </div>
+
+      <div class="prints-layout">
+
+        <div class="viewer-pane">
+          <div class="stage" id="stage">
+            <div class="viewer-msg" id="viewer-msg">Loading 3D viewer…</div>
+            <span class="viewer-hint" aria-hidden="true">Drag · Rotate — Scroll · Zoom</span>
+          </div>
+          <div class="viewer-meta">
+            <div>
+              <h3 id="m-name">—</h3>
+              <span class="m-mat" id="m-mat"></span>
+              <p id="m-desc"></p>
+            </div>
+            <a class="btn btn-primary" id="m-download" href="#" download>Download STL</a>
+          </div>
+        </div>
+
+        <div class="model-list" id="model-list" aria-label="Model list">
+          <noscript>
+            <p class="lede">The interactive viewer needs JavaScript. STL files are in the <code>models/</code> folder.</p>
+          </noscript>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Andrew Olijarczyk — Mechanical Engineer</span>
+      <span>Sheet 3 of 5 · Hand-coded HTML/CSS/JS · 2026</span>
+    </div>
+  </footer>
+
+</body>
+</html>

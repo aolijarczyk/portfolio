@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Andrew Olijarczyk</title>
+  <meta name="description" content="Engineering projects by Andrew Olijarczyk: UAV design, thermal analysis, PID controls, FPV drone build, CAD automation, and code-compliant electrical work.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="index.html">A.OLIJARCZYK<span>_</span></a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="prints.html">3D Prints</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="section" aria-label="Projects">
+      <div class="section-head">
+        <p class="eyebrow">INDEX OF WORK</p>
+        <h2>Projects</h2>
+        <p class="lede">Coursework, capstone, and independent builds. Each entry carries its own drawing number.</p>
+      </div>
+
+      <div class="grid cols-2">
+
+        <div class="card">
+          <p class="eyebrow"><b>AO-101</b> · AERODYNAMICS</p>
+          <h3>UAV capstone design — RPI</h3>
+          <p>Led design and analysis of a fixed-wing unmanned aerial vehicle for the RPI capstone. Built the airframe model in Siemens NX, ran structural studies in Simcenter, and evaluated aerodynamic performance in FlightStream.</p>
+          <p><a class="text-link" href="prints.html">Spin the 3D model</a></p>
+          <div class="chips"><span class="chip">Siemens NX</span><span class="chip">Simcenter</span><span class="chip">FlightStream</span></div>
+        </div>
+
+        <div class="card">
+          <p class="eyebrow"><b>AO-102</b> · THERMAL</p>
+          <h3>Solar concentrator heat sink</h3>
+          <p>Designed a finned aluminum heat sink for the PV strip of a luminescent solar concentrator. Modeled the fin-array thermal resistance network, then iterated fin count, thickness, and length to hold the cell at 33.5&nbsp;°C — under the 35&nbsp;°C limit — with natural convection in under 1&nbsp;cm of height.</p>
+          <p><a class="text-link" href="reports/heat-transfer-report.pdf">Read the full report (PDF)</a></p>
+          <div class="chips"><span class="chip">Heat transfer</span><span class="chip">Natural convection</span><span class="chip">Fin design</span></div>
+        </div>
+
+        <div class="card">
+          <p class="eyebrow"><b>AO-103</b> · CONTROLS</p>
+          <h3>Reaction-wheel inverted pendulum</h3>
+          <p>Modeled and stabilized &ldquo;The Nacho Supreme,&rdquo; a reaction-wheel inverted pendulum, in MATLAB/Simulink. Identified the motor, pendulum, and IMU dynamics — the IMU proved to be a dynamic filter, not a unity gain — then tuned a PID controller to a 0.41&nbsp;s settling time with 7.2% overshoot.</p>
+          <p><a class="text-link" href="reports/pid-pendulum-report.pdf">Read the full report (PDF)</a></p>
+          <div class="chips"><span class="chip">MATLAB</span><span class="chip">Simulink</span><span class="chip">PID</span><span class="chip">System ID</span></div>
+        </div>
+
+        <div class="card">
+          <p class="eyebrow"><b>AO-104</b> · UAV / EMBEDDED <span class="status">· IN PROGRESS</span></p>
+          <h3>Sub-250 g FPV quadcopter</h3>
+          <p>Scratch-building a sub-250 g quad around an H743 flight controller running ArduPilot, with an ExpressLRS control link, analog FPV video, and a hand-built 2S Li-ion battery pack.</p>
+          <div class="chips"><span class="chip">ArduPilot</span><span class="chip">ExpressLRS</span><span class="chip">Li-ion pack</span><span class="chip">Soldering</span></div>
+        </div>
+
+        <div class="card">
+          <p class="eyebrow"><b>AO-105</b> · CAD AUTOMATION</p>
+          <h3>Parametric part scripts</h3>
+          <p>Python scripts against the Fusion 360 API that generate ready-to-print parts from a handful of dimensions — such as counterbored mounting plates. Enter the parameters, get the model.</p>
+          <div class="chips"><span class="chip">Fusion 360 API</span><span class="chip">Python</span></div>
+        </div>
+
+        <div class="card">
+          <p class="eyebrow"><b>AO-106</b> · ELECTRICAL</p>
+          <h3>Residential 240 V circuit</h3>
+          <p>Designed and installed a dedicated 240 V hot-tub circuit: GFCI protection and code-compliant underground wiring, completed under budget and in full compliance with electrical code.</p>
+          <div class="chips"><span class="chip">NEC</span><span class="chip">GFCI</span><span class="chip">240 V</span></div>
+        </div>
+
+        <div class="card">
+          <p class="eyebrow"><b>AO-107</b> · AUTOMOTIVE</p>
+          <h3>2019 Corolla systems integration</h3>
+          <p>Designed and installed aftermarket systems end to end: remote start, heated seats and steering wheel, CarPlay head-unit retrofit, subwoofer audio, hardwired dash cam and radar detector, and automated window control.</p>
+          <div class="chips"><span class="chip">12 V systems</span><span class="chip">Wiring</span><span class="chip">Diagnostics</span></div>
+        </div>
+
+        <a class="card" href="prints.html">
+          <p class="eyebrow"><b>AO-108</b> · FABRICATION</p>
+          <h3>3D print library →</h3>
+          <p>Printable parts modeled in CAD, rendered live in the browser. Rotate them, zoom in, and download the STL files.</p>
+          <div class="chips"><span class="chip">CAD</span><span class="chip">FDM printing</span><span class="chip">STL</span></div>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Andrew Olijarczyk — Mechanical Engineer</span>
+      <span>Sheet 2 of 5 · Hand-coded HTML/CSS/JS · 2026</span>
+    </div>
+  </footer>
+
+</body>
+</html>
